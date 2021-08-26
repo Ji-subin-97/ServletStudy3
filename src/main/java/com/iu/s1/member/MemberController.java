@@ -11,10 +11,10 @@ import org.apache.catalina.connector.Response;
 
 public class MemberController {
 	
-	private MemberDAO memberDAO;
+	private MemberService memberService;
 	
 	public MemberController() {
-		memberDAO = new MemberDAO();
+		memberService = new MemberService();
 	}
 	
 	public void start(HttpServletRequest request, HttpServletResponse response) {
@@ -37,13 +37,7 @@ public class MemberController {
 			String method = request.getMethod();
 			
 			if(method.equals("POST")) {
-				MemberDTO memberDTO = new MemberDTO();
-				memberDTO.setId(request.getParameter("id"));
-				memberDTO.setPw(request.getParameter("pw"));
-				memberDTO.setName(request.getParameter("name"));
-				memberDTO.setPhone(request.getParameter("phone"));
-				memberDTO.setEmail(request.getParameter("email"));
-				int result = memberDAO.memberJoin(memberDTO);
+				int result = memberService.memberJoin(request, response);
 				
 				if(result==1) {
 					System.out.println("성공");
@@ -54,6 +48,11 @@ public class MemberController {
 					}
 				}else {
 					System.out.println("실패");
+					try {
+						response.sendRedirect("../");
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
 				}
 			}else {
 				RequestDispatcher view = request.getRequestDispatcher("../WEB-INF/views/member/memberJoin.jsp");
