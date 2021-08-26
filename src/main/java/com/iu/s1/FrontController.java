@@ -3,6 +3,7 @@ package com.iu.s1;
 import java.io.IOException;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -46,8 +47,12 @@ public class FrontController extends HttpServlet {
 		
 		String path="";
 		//subString
+		
+		ServletConfig sc = getServletConfig();
 		HttpSession session = request.getSession();
 		ServletContext servletContext = session.getServletContext();
+		servletContext = getServletContext();
+		
 		System.out.println(request.getContextPath());
 		int startIndex = request.getContextPath().length();
 		int lastIndex = uri.lastIndexOf("/");
