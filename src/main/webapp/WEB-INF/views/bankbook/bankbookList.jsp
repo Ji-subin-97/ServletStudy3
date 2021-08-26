@@ -12,10 +12,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link href="../CSS/test.css" rel="stylesheet">
 </head>
 <body>
 	<h1>Bankbook List Page BY JSTL</h1>
-	<table>
+	<table id="table1">
 		<tr>
 			<th>일련번호</th><th>제품명</th><th>이자율</th><th>Status</th>
 		</tr>

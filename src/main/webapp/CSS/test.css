@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+a{
+	text-decoration: none;
+	color: pink;
+}
+
+h3{
+	color: blue;
+}
+
+#t1{
+	color: lime;
+}
+
+.c1{
+	color: violet;
+}
+
+h1{
+	font-size : 54px;
+	border-top: 3px dotted lime;
+	border-right : 3px solid lime;
+}
+
+.c2{
+	font-size : 32px;
+}
+/* h2{
+	
+} */
+
+
+/* bankbookList */
+#table1{
+	border-collapse: collapse;
+}
+#table1 td{
+	border: 1px solid black;
+	text-align: center;
+}
+#table1 td:nth-child(4) {
+	text-align: left;
+}
+
+#circle{
+	border: 5px solid red;
+	border-radius: 10px 40px 10px 40px; 
+	width : 200px;
+	height: 200px;
+}
