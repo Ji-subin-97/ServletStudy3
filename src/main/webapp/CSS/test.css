@@ -34,6 +34,7 @@ h1{
 /* bankbookList */
 #table1{
 	border-collapse: collapse;
+	margin: 0 auto;
 }
 #table1 td{
 	border: 1px solid black;
@@ -48,4 +49,10 @@ h1{
 	border-radius: 10px 40px 10px 40px; 
 	width : 200px;
 	height: 200px;
+}
+
+#title{
+	background-color: yellow;
+	margin: 0 auto;
+	width: 1000px;
 }

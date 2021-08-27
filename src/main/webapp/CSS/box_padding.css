@@ -1,0 +1,25 @@
+@charset "UTF-8";
+#title{
+	color: red;
+}
+
+.c1{
+	color: lime;
+	background-color: blue;
+	width: 300px;
+	height: 300px;
+	box-sizing: border-box;
+	padding-top: 100px;
+	padding-left: 100px;
+}
+
+.c1_1{
+	background-color: lime;
+	width: 100px;
+	height: 100px;
+}
+
+.c2{
+	border: 2px solid blue;
+	padding : 20px 20px 20px 20px;
+}

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#title{
+	color: red;
+}
+
+.c1{
+	width: 200px;
+	height: 200px;
+}
+
+.c1_1{
+	background-color: red;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.c1_2{
+	background-color: pink;
+	height: 100px;
+	text-align: center;
+}
+
+.cs1{
+	background-color: blue;
+	display: block;
+	width: 100px;
+	margin: 0 auto;
+}
+
+.c2{
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	margin: 50px auto;
+}

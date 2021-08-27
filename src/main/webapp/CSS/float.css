@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+img{
+	float: left;
+}
+
+.c1{
+	width: 200px;
+	height: 200px;
+}
+
+.c1_1{
+	background-color: pink;
+}
+.c1_2{
+	background-color: green;
+}
+.c1_3{
+	background-color: violet;
+	float: right;
+}
