@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.box{
+	width: 200px;
+	height: 200px;
+}
+
+.box1{
+	background-color: lime;
+	position: absolute;
+	z-index: 4;
+}
+.box2{
+	background-color: pink;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	z-index: 2;
+}
+.box3{
+	background-color: violet;
+	position: relative;
+}
+
+.box_2{
+	width: 100px;
+	height: 100px;
+	background-color: pink;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
